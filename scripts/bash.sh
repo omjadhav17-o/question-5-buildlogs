@@ -12,12 +12,11 @@ BUILD_END=$(date +%s)
 BUILD_DURATION=$((BUILD_END - BUILD_START))
 
 # Generate report
-
 mkdir -p build
 {
-echo "Build Report"
-echo "============"
-echo "Status: SUCCESS"
-echo "Date: $(date)"
-echo "Duration: ${BUILD_DURATION}s"
+  echo "Build Report"
+  echo "============"
+  echo "Status: SUCCESS"
+  echo "Date: $(date)"
+  echo "Duration: ${BUILD_DURATION}s"
 } > build/build-report.txt

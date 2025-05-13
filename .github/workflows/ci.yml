@@ -1,12 +1,12 @@
 name: CI Pipeline - Build Report and Logs
 
 on:
-push:
-branches: [main]
+  push:
+    branches: [main]
 
 jobs:
-build:
-runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
